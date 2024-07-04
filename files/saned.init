@@ -13,5 +13,5 @@ start_service() {
 }
 
 stop_service() {
-	kill $(ps | grep $PROG | grep -v grep | awk '{print $1}')
+	killall $PROG
 }
